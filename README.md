@@ -3,6 +3,7 @@ couses and personal projects using docker
 
 # prerequisites
 linux ubuntu or mint (or based)
+
 I have installed this on feren os, an ubuntu based distro
 
 # installation using the repository
