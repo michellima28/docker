@@ -1,4 +1,4 @@
-![alt text](https://pbs.twimg.com/profile_images/1273307847103635465/lfVWBmiW_400x400.png) 
+![alt text](https://geekflare.com/wp-content/uploads/2020/03/docker-security-1200x385.jpg) 
 
 # Docker
 
