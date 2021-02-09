@@ -1,18 +1,12 @@
 ![alt text](https://geekflare.com/wp-content/uploads/2020/03/docker-security-1200x385.jpg) 
 
-# Docker
-
 Courses and personal projects using Docker.
-
----
 
 ## Prerequisites
 
 Linux Ubuntu or Mint (or based).
 
 I have tested it on Feren OS, an Ubuntu based distro
-
----
 
 ## Installation using the repository
 
@@ -100,8 +94,6 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```bash
 sudo docker run hello-world
 ```
-
----
 
 ## References
 
