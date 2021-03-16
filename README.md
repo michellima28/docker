@@ -97,6 +97,38 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 sudo docker run hello-world
 ```
 
+## 3. Post-installation: running docker commands without sudo
+
+#### 3.1. Create the docker group.
+
+```bash
+sudo groupadd docker
+```
+
+#### 3.2. Add your user to the docker group.
+
+```bash
+sudo usermod -aG docker $USER
+```
+
+#### 3.3. Log out and log back in so that your group membership is re-evaluated.
+
+If testing on a virtual machine, it may be necessary to restart the virtual machine for changes to take effect.
+
+On a desktop Linux environment such as X Windows, log out of your session completely and then log back in.
+
+On Linux, you can also run the following command to activate the changes to groups:
+
+```bash
+newgrp docker
+```
+
+#### 3.4. Verify that you can run docker commands without sudo. This command downloads a test image and runs it in a container. When the container runs, it prints an informational message and exits.
+
+```bash
+docker run hello-world
+```
+
 ## References
 
 ### Docker documentation
@@ -106,3 +138,7 @@ https://docs.docker.com/engine/install/ubuntu/
 ### Error when adding the repository
 
 https://stackoverflow.com/questions/57402923/docker-installation-on-linux-mint-19-2-doesnt-work
+
+### Post-installation: running docker commands without sudo
+
+https://docs.docker.com/engine/install/linux-postinstall/
