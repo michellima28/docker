@@ -14,4 +14,4 @@ figlet hello
 
 # 04. Inspecting created image. Docker history shows all image layers. For each layer, is shown 
 # its creation time, size and command that generated it.
-
+docker history minhaimagem2
