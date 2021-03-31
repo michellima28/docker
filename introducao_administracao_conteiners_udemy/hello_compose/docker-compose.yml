@@ -1,0 +1,26 @@
+version: '3'
+services:
+    db:
+      image: mysql:5.5
+      container_name: mysql
+      restart: always
+      volumes:
+        - data_db:/var/lib/mysql
+        - "/etc/localtime:/etc/localtime:ro"
+      environment:
+        MYSQL_ROOT_PASSWORD: pass
+    owncloud:
+       image: owncloud
+       container_name: owncloud
+       restart: always
+       ports:
+         - 80:80
+       volumes:
+         - config_file:/var/www/html/config
+         - data_file:/var/www/html/data
+         - "/etc/localtime:/etc/localtime:ro"
+
+volumes:
+   data_db:
+   config_file:
+   data_file:
