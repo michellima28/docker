@@ -34,5 +34,5 @@ services:
 # to see all services 
 docker-compose top
 
-
-
+# to remove all images and volumes
+docker-compose down -v --rmi all
